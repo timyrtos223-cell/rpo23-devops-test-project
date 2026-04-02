@@ -84,7 +84,7 @@ public class TodoApiTests : IClassFixture<CustomWebApplicationFactory<Program>>
 
     public record LoginResponse(string Token);
 
-    [Fact]
+     [Fact]
     public async Task Register_ReturnsBadRequest_WhenPasswordIsEmpty()
     {
         var response = await _client.PostAsJsonAsync(
