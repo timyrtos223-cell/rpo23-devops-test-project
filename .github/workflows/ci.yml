@@ -1,4 +1,4 @@
-name: CI Pipeline
+yamlname: CI Pipeline
 
 on:
   push:
