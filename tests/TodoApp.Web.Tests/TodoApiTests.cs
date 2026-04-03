@@ -90,7 +90,7 @@ public class TodoApiTests : IClassFixture<CustomWebApplicationFactory<Program>>
         var response = await _client.PostAsJsonAsync(
             "/api/v1/auth/register",
             new RegisterRequest("test@example.com", ""));
-        // ПРАВИЛЬНО: ожидаем ошибку (400 BadRequest)jhhjjhjhjhjhjhjh
+        // ПРАВИЛЬНО: ожидаем ошибку (400 BadRequest)jhhjjhjhjhjhjhjhdfgdfgdfgdfgdfgdfg
         response.StatusCode.Should().Be(HttpStatusCode.BadRequest);
     }
 }
